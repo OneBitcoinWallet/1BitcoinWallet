@@ -1,3 +1,6 @@
+To achieve that, you can modify the JavaScript functions and add URL parameters to specify which section to display. Here's an updated version of the code that includes the URLs for the license agreement and privacy policy sections:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,8 +37,8 @@
   <div class="navbar">
     <img src="appstore.png" alt="Logo">
     <div>
-      <button class="navbar-item" onclick="showLicenseAgreement()">License Agreement</button>
-      <button class="navbar-item" onclick="showPrivacyPolicy()">Privacy Policy</button>
+      <a href="?section=license" class="navbar-item">License Agreement</a>
+      <a href="?section=privacy" class="navbar-item">Privacy Policy</a>
       <button class="navbar-item">Download</button>
     </div>
   </div>
@@ -79,7 +82,9 @@
     </p>
     
     <p>
-      <strong>Q: What can users expect from the user interface?</strong><br>
+     
+
+ <strong>Q: What can users expect from the user interface?</strong><br>
       A: The wallet offers a visually appealing retro user interface, providing a delightful experience for Flutter enthusiasts who wish to send, receive, and track their Bitcoin transactions easily.
     </p>
     
@@ -102,15 +107,29 @@
   </div>
 
   <script>
-    function showLicenseAgreement() {
-      document.getElementById("license-agreement").style.display = "block";
-      document.getElementById("privacy-policy").style.display = "none";
+    function showSection(section) {
+      if (section === "license") {
+        document.getElementById("license-agreement").style.display = "block";
+        document.getElementById("privacy-policy").style.display = "none";
+      } else if (section === "privacy") {
+        document.getElementById("license-agreement").style.display = "none";
+        document.getElementById("privacy-policy").style.display = "block";
+      }
     }
 
-    function showPrivacyPolicy() {
-      document.getElementById("license-agreement").style.display = "none";
-      document.getElementById("privacy-policy").style.display = "block";
+    // Get the section from the URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const section = urlParams.get("section");
+
+    // Show the corresponding section if specified
+    if (section === "license") {
+      showSection("license");
+    } else if (section === "privacy") {
+      showSection("privacy");
     }
   </script>
 </body>
 </html>
+```
+
+Now, when you click on the "License Agreement" or "Privacy Policy" buttons, it will redirect you to the corresponding section within the page based on the URL parameters.
