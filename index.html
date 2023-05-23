@@ -6,12 +6,38 @@
   <title>Your App Name</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <style>
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar img {
+      max-width: 100px;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .image-container img {
+      margin: 10px;
+      max-width: 300px;
+    }
+  </style>
 </head>
 <body>
   <div class="navbar">
-    <button class="navbar-item">License Agreement</button>
-    <button class="navbar-item">Privacy Policy</button>
-    <button class="navbar-item">Download</button>
+    <img src="appstore.png" alt="Logo">
+    <div>
+      <button class="navbar-item">License Agreement</button>
+      <button class="navbar-item">Privacy Policy</button>
+      <button class="navbar-item">Download</button>
+    </div>
   </div>
   
   <div class="main-content">
@@ -19,6 +45,12 @@
     <p>
       Take control of your Bitcoin assets with 1Bitcoin Wallet, a retro-styled HD wallet built with Dart and Flutter. Designed for managing Bitcoin transactions and assets securely, our wallet offers a visually appealing and intuitive user experience.
     </p>
+
+    <div class="image-container">
+      <img src="image1.jpg" alt="Sample Image 1">
+      <img src="image2.jpg" alt="Sample Image 2">
+      <img src="image3.jpg" alt="Sample Image 3">
+    </div>
 
     <h2>FAQ</h2>
 
@@ -54,8 +86,4 @@
     
     <p>
       <strong>Q: Is this an open-source project?</strong><br>
-      A: No, this wallet is not an open-source project. Ensuring the security and integrity of the codebase is crucial for a wallet application. Publicly exposing the code can increase the risk of potential vulnerabilities and attacks. For instance, the Electrum open-source project experienced a hack in the past when someone accepted a malicious merge request, resulting in user loss of funds. Therefore, we have chosen to maintain the code privately to prioritize the safety of our users' assets.
-    </p>
-  </div>
-</body>
-</html>
+      A: No, this wallet is not an open-source project. Ensuring the security and integrity of the codebase is crucial for a
