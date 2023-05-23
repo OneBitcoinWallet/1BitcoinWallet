@@ -34,8 +34,8 @@
   <div class="navbar">
     <img src="appstore.png" alt="Logo">
     <div>
-      <button class="navbar-item">License Agreement</button>
-      <button class="navbar-item">Privacy Policy</button>
+      <button class="navbar-item" onclick="showLicenseAgreement()">License Agreement</button>
+      <button class="navbar-item" onclick="showPrivacyPolicy()">Privacy Policy</button>
       <button class="navbar-item">Download</button>
     </div>
   </div>
@@ -43,8 +43,8 @@
   <div class="main-content">
     <h1>1Bitcoin Wallet</h1>
     <p>
-    
-Take control of your Bitcoin assets with 1Bitcoin Wallet, a retro-styled HD wallet built with Dart and Flutter. Designed for managing Bitcoin transactions and assets securely, our wallet offers a visually appealing and intuitive user experience. With 1Bitcoin Wallet, you have the flexibility to manage multiple wallets within a single application. Whether you need separate wallets for personal and business use or want to organize your funds in different accounts, our wallet allows you to create and manage multiple wallets effortlessly. Enjoy the convenience and versatility of having multiple wallets at your fingertips, all within one stylish and functional HD wallet.</p>
+      Take control of your Bitcoin assets with 1Bitcoin Wallet, a retro-styled HD wallet built with Dart and Flutter. Designed for managing Bitcoin transactions and assets securely, our wallet offers a visually appealing and intuitive user experience. With 1Bitcoin Wallet, you have the flexibility to manage multiple wallets within a single application. Whether you need separate wallets for personal and business use or want to organize your funds in different accounts, our wallet allows you to create and manage multiple wallets effortlessly. Enjoy the convenience and versatility of having multiple wallets at your fingertips, all within one stylish and functional HD wallet.
+    </p>
 
     <div class="image-container">
       <img src="image1.jpg" alt="Sample Image 1">
@@ -53,7 +53,6 @@ Take control of your Bitcoin assets with 1Bitcoin Wallet, a retro-styled HD wall
     </div>
 
     <h2>FAQ</h2>
-
     <p>
       <strong>Q: What is this HD wallet designed for?</strong><br>
       A: This retro-styled HD wallet is designed for managing Bitcoin transactions and assets securely.
@@ -88,6 +87,30 @@ Take control of your Bitcoin assets with 1Bitcoin Wallet, a retro-styled HD wall
       <strong>Q: Is this an open-source project?</strong><br>
       A: No, this wallet is not an open-source project. Ensuring the security and integrity of the codebase is crucial for a wallet application. Publicly exposing the code can increase the risk of potential vulnerabilities and attacks. For instance, the Electrum open-source project experienced a hack in the past when someone accepted a malicious merge request, resulting in user loss of funds. Therefore, we have chosen to maintain the code privately to prioritize the safety of our users' assets.
     </p>
+
+    <h2>License Agreement</h2>
+    <div id="license-agreement" style="display: none;">
+      <!-- Add your license agreement content here -->
+      <p>This is the license agreement section. Replace this text with your actual license agreement content.</p>
+    </div>
+
+    <h2>Privacy Policy</h2>
+    <div id="privacy-policy" style="display: none;">
+      <!-- Add your privacy policy content here -->
+      <p>This is the privacy policy section. Replace this text with your actual privacy policy content.</p>
+    </div>
   </div>
+
+  <script>
+    function showLicenseAgreement() {
+      document.getElementById("license-agreement").style.display = "block";
+      document.getElementById("privacy-policy").style.display = "none";
+    }
+
+    function showPrivacyPolicy() {
+      document.getElementById("license-agreement").style.display = "none";
+      document.getElementById("privacy-policy").style.display = "block";
+    }
+  </script>
 </body>
 </html>
