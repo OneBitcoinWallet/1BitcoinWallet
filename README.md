@@ -1,5 +1,5 @@
 # 1BitcoinWallet
-The retro-themed Flutter HD wallet. Simple - Secure - Fast
+The retro-themed Bitcoin HD wallet. Simple - Secure - Fast
 # 1BitcoinWallet
 
 1BitcoinWallet is a retro-themed HD wallet built with Dart and Flutter. It provides a secure and user-friendly interface for managing Bitcoin transactions and assets.
