@@ -1,7 +1,7 @@
 # 1BitcoinWallet
 The retro-themed Bitcoin HD wallet. Simple - Secure - Fast
 
-![1BitcoinWallet](https://onebitcoinwallet.github.io/1BitcoinWallet/image1.jpg)
+<img src="https://onebitcoinwallet.github.io/1BitcoinWallet/image1.jpg" alt="1BitcoinWallet" width="200">
 
 ## Description
 
@@ -21,7 +21,7 @@ Visit the [1BitcoinWallet website](https://onebitcoinwallet.github.io/1BitcoinWa
 
 To get started with 1BitcoinWallet, follow these steps:
 
-1. Download the app from the [Google Play Store](https://play.google.com/store/apps/details?id=com.example.onebitcoinwallet).
+1. Download the app from the [Google Play Store].
 
 ## Contributions
 
