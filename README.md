@@ -28,5 +28,4 @@ To get started with 1BitcoinWallet, follow these steps:
 Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue :)
 
 ## License
-
-1BitcoinWallet is released under the [MIT License](LICENSE).
+-
